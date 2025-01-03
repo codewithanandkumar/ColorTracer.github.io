@@ -9,27 +9,31 @@
     <link rel="stylesheet" href="./ColorTracer.css">
 </head>
 <body>
-    <div class="containerPicker">
-        <div class="image-picker">
-            <h1 style="color:tomato"> ColorTracer : Anand's Edition - 1</h1>
-            <div class="drag-and-drop" id="dragAndDrop">
-                Drag and drop an image here or click to upload
-            </div>
-            <input type="file" id="imageInput" accept="image/*" style="display:none;" />
-            <canvas id="imageCanvas" style="display:none;"></canvas>
-            <img id="displayedImage" 
- src="https://scontent.fhyd11-1.fna.fbcdn.net/v/t39.30808-6/419752784_1408762333182410_7293490295413186939_n.png?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=cc71e4&amp;_nc_ohc=-JcR3_w6j_oQ7kNvgEbhx6q&amp;_nc_zt=23&amp;_nc_ht=scontent.fhyd11-1.fna&amp;_nc_gid=A0UIzOh7OhixAlPsu3IpRUV&amp;oh=00_AYDyqTEUrmv5zOClWlLZETnxYHesBUo5rG2Hou6PhOpYxw&amp;oe=677A738C" 
- alt="Default Image" />
-            <div class="magnifier" id="magnifier"></div>
+   <div class="containerPicker">
+    <div class="image-picker">
+        <h1 style="color:tomato"> ColorTracer : Anand's Edition - 1</h1>
+        <div class="drag-and-drop" id="dragAndDrop">
+            Drag and drop an image here or click to upload
         </div>
-        <div class="color-info">
-            <div class="color-display" id="colorDisplay"></div>
-            <div class="d-flex flex-column gap-0">
-                <span class="copyable bg-light-subtle border border-1 border-primary-subtle text-light btn d-flex gap-2"><span class="text-dark-emphasis">HEX: </span><span id="hexValue" title="click to copy">#ffffff</span></span><br />
-                <span class="copyable bg-light-subtle border border-1 border-primary-subtle text-light btn d-flex gap-2"><span class="text-dark-emphasis">RGB:</span> <span id="rgbValue" title="click to copy">rgb(255, 255, 255)</span></span>
-            </div>
+        <input type="file" id="imageInput" accept="image/*" style="display:none;" />
+        <canvas id="imageCanvas" style="display:none;"></canvas>
+        <img id="displayedImage" 
+             src="https://scontent.fhyd11-1.fna.fbcdn.net/v/t39.30808-6/419752784_1408762333182410_7293490295413186939_n.png?_nc_cat=111&amp;ccb=1-7&amp;_nc_sid=cc71e4&amp;_nc_ohc=-JcR3_w6j_oQ7kNvgEbhx6q&amp;_nc_zt=23&amp;_nc_ht=scontent.fhyd11-1.fna&amp;_nc_gid=A0UIzOh7OhixAlPsu3IpRUV&amp;oh=00_AYDyqTEUrmv5zOClWlLZETnxYHesBUo5rG2Hou6PhOpYxw&amp;oe=677A738C" 
+             alt="Default Image" />
+        <div class="magnifier" id="magnifier"></div>
+    </div>
+    <div class="color-info">
+        <div class="color-display" id="colorDisplay"></div>
+        <div class="d-flex flex-column gap-0">
+            <span class="copyable bg-light-subtle border border-1 border-primary-subtle text-light btn d-flex gap-2"><span class="text-dark-emphasis">HEX: </span><span id="hexValue" title="click to copy">#ffffff</span></span><br />
+            <span class="copyable bg-light-subtle border border-1 border-primary-subtle text-light btn d-flex gap-2"><span class="text-dark-emphasis">RGB:</span> <span id="rgbValue" title="click to copy">rgb(255, 255, 255)</span></span>
         </div>
     </div>
+
+    <!-- Color Picker Button -->
+    <button class="color-picker-button" id="colorPickerButton">Color Picker</button>
+    <input type="color" id="colorInput">
+</div>
     <script src="./ColorTracer.js"></script>
 
 </body>
